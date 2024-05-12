@@ -1,0 +1,119 @@
+.App-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.App-header h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.recipe-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; 
+}
+
+.recipe-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  max-width: 300px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+.recipe-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.recipe-card p {
+  font-size: 1rem;
+}
+
+.recipe-details {
+  text-align: center;
+  margin-top: 20px;
+  display: none; 
+}
+
+.recipe-details.active {
+  display: block; 
+}
+
+.return-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.return-button:hover {
+  background-color: #0056b3;
+ 
+}
+
+.login-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin-bottom: -45vh;
+}
+
+.login-message {
+  font-size: 1.2rem;
+  color: #ec099d; 
+}
+
+
+.logout-button,
+.login-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logout-button:hover,
+.login-button:hover {
+  background-color: #218838;
+}
+
+.recipe-details ol {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 20px; 
+}
+
+.recipe-details ol li {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  list-style-type: decimal; 
+}
+
+.recipe-details ol li::before {
+  content: "";
+  display: inline-block;
+  width: 10px; 
+  height: 10px;
+  border-radius: 50%; 
+  margin-right: 10px; 
+}
